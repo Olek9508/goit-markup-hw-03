@@ -14,42 +14,70 @@
   --active-color: #000000;
   --footer-text-color: rgba(255, 255, 255, 0.6);
   --portfolio-colors: #f5f4fa;
+  --border-color: #ececec;
+  --border-portfolio-color: #eeeeee;
 }
 
-html {
-  box-sizing: border-box;
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+a {
+  display: block;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
 
 body {
   background-color: #fff;
   color: var(--secondary-text-color);
   font-family: Roboto, sans-serif;
-  margin: 0;
-
-  /* letter-spacing: ; */
 }
 
-ul {
-  list-style: none;
+/* -----------Header/Site nav----------- */
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid var(--border-color);
 }
 
-/* Header/Site nav */
-
-/* .header {
-  background-color: tomato;
+.header-container {
+  display: flex;
+  align-items: center;
 }
 
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1600px;
-} */
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav-list {
+  display: flex;
+}
 
 .nav-title {
   font-family: 'Raleway', sans-serif;
@@ -70,6 +98,15 @@ ul {
   letter-spacing: 0.02em;
 }
 
+.nav-title,
+.nav-logo {
+  margin-right: 93px;
+}
+
+.nav-item + .nav-item {
+  margin-left: 50px;
+}
+
 .link {
   color: var(--active-color);
   font-weight: 500;
@@ -88,6 +125,18 @@ ul {
   color: var(--ineractive-color);
 }
 
+.header-adress {
+  display: flex;
+}
+
+.header-adress {
+  margin-left: auto;
+}
+
+.adress-list {
+  display: flex;
+}
+
 .mail,
 .phone {
   text-decoration: none;
@@ -103,16 +152,24 @@ ul {
   color: var(--ineractive-color);
 }
 
+.phone {
+  margin-left: 50px;
+}
+
 .phone:hover,
 .phone:focus {
   color: var(--ineractive-color);
 }
 
+/* -----------------Main----------------- */
+
 /* Hero */
 
-.hero {
+.hero-section {
   background-color: var(--hero-background-color);
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -123,6 +180,7 @@ ul {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin-bottom: 30px;
 }
 
 .hero-button {
@@ -137,6 +195,8 @@ ul {
   cursor: pointer;
   letter-spacing: 0.06em;
   border-radius: 4px;
+  border: transparent;
+  border-style: solid;
   padding: 10px 32px;
 }
 
@@ -148,6 +208,21 @@ ul {
 
 /* Sections */
 
+.section,
+.team-section,
+.about-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section-list {
+  display: flex;
+}
+
+.section-item {
+  margin-left: 30px;
+}
+
 .section-title {
   color: var(--active-color);
   font-weight: 700;
@@ -155,6 +230,8 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
+  text-align: left;
 }
 
 .section-point {
@@ -162,27 +239,65 @@ ul {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  text-align: left;
 }
 
-.team {
+.about-list {
+  display: flex;
+  text-align: center;
+  margin-left: -30px;
+}
+
+.about-item {
+  width: calc(100% / 3 -30px);
+  margin-left: 30px;
+}
+
+.team-section {
   background-color: var(--portfolio-colors);
 }
 
-.works-section,
-.team-section {
+.team-list {
+  display: flex;
+  text-align: center;
+  margin-left: -30px;
+  margin-bottom: -30px;
+}
+
+.team-item {
+  width: calc(100% / 4 -30px);
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.about-us,
+.our-team {
   color: var(--primary-color-text);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.5;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  text-align: center;
 }
 
 .team-member {
+  background-color: var(--hero-text-color);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-color: var(--hero-text-color);
+  border-style: solid;
+}
+
+.teammate-name {
   color: var(--primary-color-text);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
 }
 
 .team-position {
@@ -196,6 +311,12 @@ ul {
 
 .footer {
   background-color: var(--hero-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-title {
+  margin-bottom: 20px;
 }
 
 .footer-title {
@@ -228,6 +349,7 @@ ul {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+  margin-bottom: 9px;
 }
 
 .footer-map:hover,
@@ -241,6 +363,7 @@ ul {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+  margin-bottom: 9px;
 }
 
 .footer-details:hover,
@@ -265,6 +388,24 @@ ul {
   margin: -1px;
 }
 
+/* --------Portfolio Section/ Main-------- */
+
+.portfolio-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.buttons-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.button-item + .button-item {
+  margin-left: 8px;
+}
+
 .buttons-portfolio {
   color: var(--primary-color-text);
   background-color: var(--portfolio-colors);
@@ -275,8 +416,9 @@ ul {
   line-height: 1.6;
   letter-spacing: 0.03em;
   border-radius: 4px;
+  border: transparent;
+  border-style: solid;
   padding: 6px 22px;
-  text-align: center;
 }
 
 .buttons-portfolio:hover,
@@ -287,12 +429,36 @@ ul {
 
 /* Main */
 
+.example {
+  display: flex;
+  text-align: center;
+  margin-left: -30px;
+  margin-bottom: -30px;
+  flex-wrap: wrap;
+}
+
+.example-item {
+  width: calc(100% / 9 -30px);
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.example-description {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border-portfolio-color);
+  border-left: 1px solid var(--border-portfolio-color);
+  border-right: 1px solid var(--border-portfolio-color);
+}
+
 .example-title {
   color: var(--primary-color-text);
   font-style: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-bottom: 4px;
+  text-align: left;
 }
 
 .example-text {
@@ -300,4 +466,5 @@ ul {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
+  text-align: left;
 }
