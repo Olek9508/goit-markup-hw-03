@@ -217,9 +217,12 @@ body {
 
 .section-list {
   display: flex;
+  text-align: left;
+  margin-left: -30px;
 }
 
 .section-item {
+  width: calc(100% / 4 -30px);
   margin-left: 30px;
 }
 
@@ -231,7 +234,6 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
-  text-align: left;
 }
 
 .section-point {
@@ -239,12 +241,10 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  text-align: left;
 }
 
 .about-list {
   display: flex;
-  text-align: center;
   margin-left: -30px;
 }
 
