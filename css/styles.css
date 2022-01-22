@@ -130,6 +130,7 @@ body {
 
 .header-adress {
   margin-left: 331px;
+  align-items: center;
 }
 
 .adress-list {
