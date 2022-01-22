@@ -60,8 +60,6 @@ body {
 /* -----------Header/Site nav----------- */
 
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
   border-bottom: 1px solid var(--border-color);
 }
 
@@ -87,6 +85,8 @@ body {
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .nav-logo {
@@ -113,6 +113,8 @@ body {
   line-height: 1.8;
   text-decoration: none;
   letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .link:hover,
@@ -145,6 +147,8 @@ body {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.2;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .mail:hover,
