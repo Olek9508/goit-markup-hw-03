@@ -445,7 +445,7 @@ body {
 
 .example {
   display: flex;
-  text-align: center;
+  text-align: left;
   margin-left: -30px;
   margin-bottom: -30px;
   flex-wrap: wrap;
@@ -471,7 +471,6 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
   margin-bottom: 4px;
-  text-align: left;
 }
 
 .example-text {
@@ -479,5 +478,4 @@ body {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
-  text-align: left;
 }
