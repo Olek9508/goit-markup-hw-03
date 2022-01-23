@@ -436,7 +436,7 @@ body {
   letter-spacing: 0.03em;
   padding: 6px 22px;
   border-radius: 4px;
-  border: transparent;
+  border: 0;
 }
 
 .buttons-portfolio:hover,
