@@ -40,15 +40,12 @@ img {
   height: auto;
 }
 
-a {
-  display: block;
-}
-
 .container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 body {
@@ -202,8 +199,7 @@ body {
   cursor: pointer;
   letter-spacing: 0.06em;
   border-radius: 4px;
-  border: transparent;
-  border-style: solid;
+  border: 0;
   min-width: 200px;
   height: 50px;
 }
@@ -296,6 +292,7 @@ body {
   background-color: var(--hero-text-color);
   padding-top: 30px;
   padding-bottom: 30px;
+  border: 0;
 }
 
 .teammate-name {
@@ -333,6 +330,7 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
+  display: block;
 }
 
 .footer-logo {
@@ -357,6 +355,7 @@ body {
   line-height: 1.7;
   letter-spacing: 0.03em;
   margin-bottom: 9px;
+  display: block;
 }
 
 .footer-map:hover,
@@ -371,6 +370,7 @@ body {
   line-height: 1.7;
   letter-spacing: 0.03em;
   margin-bottom: 9px;
+  display: block;
 }
 
 .footer-email:hover,
@@ -384,6 +384,7 @@ body {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+  display: block;
 }
 
 .footer-tel:hover,
