@@ -72,6 +72,7 @@ body {
 
 .site-nav-list {
   display: flex;
+  margin-left: 93px;
 }
 
 .nav-title {
@@ -93,10 +94,6 @@ body {
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-}
-
-.nav-title {
-  margin-right: 93px;
 }
 
 .nav-item + .nav-item {
