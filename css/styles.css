@@ -58,9 +58,6 @@ body {
 
 .header {
   border-bottom: 1px solid var(--border-color);
-  /* max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto; */
 }
 
 .header-container {
@@ -171,9 +168,6 @@ body {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
-  /* max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto; */
 }
 
 .hero-title {
@@ -265,9 +259,6 @@ body {
 
 .team-section {
   background-color: var(--portfolio-colors);
-  /* max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto; */
 }
 
 .team-list {
@@ -324,9 +315,6 @@ body {
   background-color: var(--hero-background-color);
   padding-top: 60px;
   padding-bottom: 60px;
-  /* max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto; */
 }
 
 .footer-title {
